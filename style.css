@@ -1,0 +1,153 @@
+* {
+	font-family: Verdana, 'Geneva', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	padding: 30px;
+}
+
+#logo {
+	width: 65px;
+    line-height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+	font-weight: bold;
+	background-color: #d1d1d1;
+    border: 2px solid black;
+}
+
+#tytul {
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 200%;
+}
+
+nav {
+	align-self: flex-start;
+	display: flex;
+	flex-grow: 2;
+	justify-content: flex-end;
+}
+
+#hamburger {
+	display: none;
+	border-radius: 5px;
+	border: 2px solid black;
+	width: 65px;
+	height: 65px;
+	background: #d1d1d1;
+}
+
+.line {
+	width: 35px;
+	height: 0;
+	border: 1px solid black;
+}
+
+a {
+	width: 75px;
+}
+
+main {
+	display: flex;
+	padding: 15px;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+	width: 100%;
+	border-style: solid;
+	border-width: 2px;
+}
+
+article > h {
+	align-self: flex-end;
+	background-color: #d1d1d1;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50%;
+	font-size: 1.5em;
+}
+
+article > p {
+	text-align: justify;
+	padding: 15px;
+}
+
+footer {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #d1d1d1;
+	border-top: 2px solid black;
+	margin-top: 15px;
+	height: 100px;
+	flex-shrink: 0;
+}
+
+#drugi_w_stopce {
+	font-weight: bold;
+}
+
+@media all and (max-width: 900px) {
+	header {
+		justify-content: space-between;
+	}
+	main {
+		flex-wrap: wrap;
+	}
+	nav {
+		display: none;
+	}
+	#tytul {
+		display: none;
+	}
+	#hamburger {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
